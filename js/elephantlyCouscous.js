@@ -16,7 +16,7 @@ App.main = function(){
         });
     }
 
-    var current = window.location.pathname;
+    var current = window.location.pathname.substring(1, window.location.pathname.length);
     $('nav li[data-relative="'+current+'"]').addClass('current');
 }
 
