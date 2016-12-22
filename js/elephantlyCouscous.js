@@ -15,6 +15,9 @@ App.main = function(){
             "width": "100%",
         });
     }
+
+    var current = window.location.pathname;
+    $('nav li[data-relative="'+current+'"]').addClass('current');
 }
 
 App.main();

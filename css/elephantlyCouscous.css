@@ -62,6 +62,12 @@ code {
   padding-top: 6rem;
   margin-top: -6rem;
 }
+.current {
+  border-bottom: 0.1rem solid #f4f5f6;
+}
+/*.current a {
+  color: #dea9ff;
+}*/
 /* Larger than mobile screen */
 /* Larger than tablet screen */
 @media (min-width: 80rem) {

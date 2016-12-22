@@ -27,7 +27,7 @@
         {% block menu %}
         <ul>
             {% for itemId, item in menu.items %}
-            <li>
+            <li data-relative="{{item.relativeUrl}}">
                 <a
                 href="{{ item.absoluteUrl|default(baseUrl ~ '/' ~ item.relativeUrl) }}">
                 {{ item.text|raw }}
