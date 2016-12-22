@@ -1,0 +1,94 @@
+code{
+    max-width: 100%;
+    overflow-x: scroll;
+    display: block;
+}
+.panel {
+    background-color: #606c76;
+    color: #ffffff;
+    position: fixed;
+    left: -15.625em; /*left or right and the width of your navigation panel*/
+    width: 15.625em; /*should match the above value*/
+    z-index: 2;
+    overflow-y: scroll;
+    padding: 1rem;
+    li{
+        list-style: none;
+    }
+    a{
+        color: #ffffff;
+        &:hover{
+            color: #dea9ff;
+        }
+    }
+}
+
+.push {
+    overflow: hidden;
+    position: relative;
+    margin-top: 10rem;
+    header{
+        text-align: center;
+        position: fixed;
+        top: 0;
+        background: #f4f5f6;
+        border-bottom: .1rem solid #d1d1d1;
+        width: 100%;
+        z-index: 2;
+            height: 6rem;
+        h1{
+            margin-bottom: 0;
+        }
+        .menu-link{
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+        .github {
+            border: 0;
+            color: #f4f5f6;
+            fill: #9b4dca;
+            height: 6rem;
+            position: fixed;
+            right: 0;
+            top: 0;
+            width: 6rem;
+            z-index: 1;
+        }
+    }
+}
+
+// anchor fix
+.anchor{
+    padding-top: 6rem;
+    margin-top: -6rem;
+}
+
+/* Larger than mobile screen */
+@media (min-width: 40.0rem) {
+}
+
+/* Larger than tablet screen */
+@media (min-width: 80.0rem) {
+    .panel{
+        left: 0 !important;
+        display: inline-block !important;
+    }
+    .push{
+        position: relative !important;
+        display: inline-block !important;
+        width: calc(~"100% - 15.625em");
+        margin-left: 15.625em;
+        header{
+            width: calc(~"100% - 15.625em");
+            right: 0;
+            .menu-link{
+                display: none;
+            }
+        }
+    }
+}
+
+/* Larger than desktop screen */
+@media (min-width: 120.0rem) {
+}
