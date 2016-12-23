@@ -19,10 +19,6 @@ App.main = function(){
     var current = window.location.href;
     $('nav a[href="'+current+'"]').closest('li').addClass('current');
 
-    $('.menu-link').bigSlide({
-        'easyClose': true
-    });
-
     // Syntax highlighting
     hljs.initHighlightingOnLoad();
 }
