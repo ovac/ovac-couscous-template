@@ -11,7 +11,7 @@
 
   <link rel="stylesheet" href="{{ baseUrl }}/css/normalize.css">
   <link rel="stylesheet" href="{{ baseUrl }}/css/milligram.min.css">
-  <link rel="stylesheet" href="{{ baseUrl }}/css/elephantlyCouscous.css">
+  <link rel="stylesheet" href="{{ baseUrl }}/css/ovac-couscous.css">
   <link rel="stylesheet" href="{{ baseUrl }}/css/emojifyBase.min.css">
   <link rel="stylesheet" href="{{ baseUrl }}/css/emojify.min.css">
   <link rel="stylesheet" href="{{ baseUrl }}/css/emojify-emoticons.min.css">
@@ -23,10 +23,30 @@
 </head>
 
 <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TWFSSDL"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <nav id="menu" class="panel" role="navigation">
-        <h5>Table des matieres</h5>
+        <h5>Table of Contents</h5>
         {% block menu %}
         <ul>
+            {% for section in menu.sections %}
+                <p class="text-muted">
+                    {{ section.name }}
+                </p>
+
+                <ul class="nav nav-pills nav-stacked">
+                    {% for itemId, item in section.items %}
+                        <li class="{{ itemId == currentMenu ? 'active' }}">
+                            <a href="{{ item.absoluteUrl|default(baseUrl ~ '/' ~ item.relativeUrl) }}">
+                                {{ item.text|raw }}
+                            </a>
+                        </li>
+                    {% endfor %}
+                </ul>
+            {% endfor %}
+
             {% for itemId, item in menu.items %}
             <li data-relative="{{item.relativeUrl}}">
                 <a
@@ -58,6 +78,7 @@
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="{{ baseUrl }}/js/hide-on-scroll.js"></script>
     <script src="{{ baseUrl }}/js/bigSlide.js"></script>
     <script src="{{ baseUrl }}/js/emojify.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
@@ -68,6 +89,24 @@
         });
     });
     </script>
-    <script src="{{ baseUrl }}/js/elephantlyCouscous.js"></script>
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-599a2b3ed56dd5f2"></script> 
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-TWFSSDL');</script>
+    <!-- End Google Tag Manager -->
+    <!-- Google Analytics -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-104991685-1', 'auto');
+    ga('send', 'pageview');
+    </script>
+    <!-- End Google Analytics -->
 </body>
 </html>
