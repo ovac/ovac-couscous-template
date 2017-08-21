@@ -1,7 +1,22 @@
-# ElephantlyCouscous
+# OVAC Couscous Template
+
+
+```md
+ Follow me anywhere @ovac4u                         | GitHub
+ _________                          _________       | Twitter
+|   ___   |.-----.--.--.---.-.----.|  |  |.--.--.   | Facboook
+|  |  _   ||  _  |  |  |  _  |  __||__    |  |  |   | Instagram
+|  |______||_____|\___/|___._|____|   |__||_____|   | Github + @ovac
+|_________|                        www.ovac4u.com   | Facebook + @ovacposts
+```
+
+
+### Introduction
 A template for couscous generated template by [!OVAC4U][`https://github.com/ovac/ovac-couscous-template`] inspired by the [ElephantlyCouscous](https://github.com/elephantly/ElephantlyCouscous) template design and the [Template-Dark](https://github.com/CouscousPHP/Template-Dark) template configuration with widgets and google analytics.
 
 [Read The Docs](https://readthedocs.org/) builds websites using a Sphinx template. [That template](https://github.com/snide/sphinx_rtd_template) is open source and released under the MIT license.
+
+
 
 ## Usage
 
@@ -104,3 +119,5 @@ menu:
 ```
 
 This template configuration is based on the excellent [Template-Dark](https://github.com/CouscousPHP/Template-Dark)
+
+
