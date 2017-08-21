@@ -12,7 +12,7 @@
 
 
 ## Introduction
-A template for couscous generated template by [!OVAC4U][`https://github.com/ovac/ovac-couscous-template`] inspired by the [ElephantlyCouscous](https://github.com/elephantly/ElephantlyCouscous) template design and the [Template-Dark](https://github.com/CouscousPHP/Template-Dark) template configuration with widgets and google analytics.
+A template for couscous generated template by [OVAC4U][`https://github.com/ovac/ovac-couscous-template`] inspired by the [ElephantlyCouscous](https://github.com/elephantly/ElephantlyCouscous) template design and the [Template-Dark](https://github.com/CouscousPHP/Template-Dark) template configuration with widgets and google analytics.
 
 [Read The Docs](https://readthedocs.org/) builds websites using a Sphinx template. [That template](https://github.com/snide/sphinx_rtd_template) is open source and released under the MIT license.
 
