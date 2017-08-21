@@ -16,7 +16,7 @@ A template for couscous generated template by ![OVAC4U](`https://github.com/ovac
 
 [Read The Docs](https://readthedocs.org/) builds websites using a Sphinx template. [That template](https://github.com/snide/sphinx_rtd_template) is open source and released under the MIT license.
 
-
+Curious about seeing what it looks like? checkout the [OVAC\Hubtel-Payment](`https://ovac4u.com/packages/hubtel-payment`) composer package official documentation generated using this theme and configuration.
 
 ## Usage
 
@@ -54,7 +54,7 @@ widgets:
     googletag: GTM-XXXXXXX
 
 template:
-    # the github url for this template. !Dont change this
+    # the github url for this template. !Dont change this if you want this theme.
     url: https://github.com/ovac/ovac-couscous-template
 
 include:

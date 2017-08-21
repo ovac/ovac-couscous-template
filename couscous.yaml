@@ -1,0 +1,39 @@
+# Wondering what this file is? 
+# See: https://github.com/ovac/ovac-couscous-theme
+# See: http://couscous.io
+
+# Base URL of the published website
+baseUrl: https://ovac.github.io/ovac-couscous-template
+
+# Used to link to the GitHub project
+github:
+    user: ovac
+    repo: ovac-couscous-template
+
+widgets:
+    addthis: ra-599a2b3ed56dd5f2
+    googleAnalytics: UA-104991685-1
+    googletag: GTM-TWFSSDL
+
+template:
+    url: https://github.com/ovac/ovac-couscous-template
+
+title: OVAC Couscous Template
+subTitle: it's beautiful.
+
+# The left menu bar
+menu:
+    sections:
+        introduction:
+            name: Introduction
+            items:
+                home:
+                    text: Home
+                    relativeUrl:
+        
+        links:
+            name: Links
+            items:
+                hubtel-documentation:
+                    text: More open souce juice by OVAC4U
+                    absoluteUrl: https://www.ovac4u.com
