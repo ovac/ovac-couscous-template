@@ -78,9 +78,9 @@
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="{{ baseUrl }}/js/emojify.min.js"></script>
     <script src="{{ baseUrl }}/js/hide-on-scroll.js"></script>
     <script src="{{ baseUrl }}/js/bigSlide.js"></script>
-    <script src="{{ baseUrl }}/js/emojify.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
     <script>
     $(document).ready(function() {
@@ -93,9 +93,9 @@
     {% block widgets %}
         {% if widgets.addthis %}
             <!-- Addthis widgets. Visit https://www.addthis.com for yours-->
-            <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid={{ widgets.addthis }}"></script> 
+            <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid={{ widgets.addthis }}"></script>
         {% endif %}
-        
+
         {% if widgets.googletag %}
             <!-- Google Tag Manager -->
             <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
