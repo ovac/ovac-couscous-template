@@ -1,9 +1,9 @@
-# Wondering what this file is? 
+# Wondering what this file is?
 # See: https://github.com/ovac/ovac-couscous-theme
 # See: http://couscous.io
 
 # Base URL of the published website
-baseUrl: https://ovac.github.io/ovac-couscous-template
+baseUrl: https://ovac4u.com/ovac-couscous-template
 
 # Used to link to the GitHub project
 github:
@@ -30,7 +30,7 @@ menu:
                 home:
                     text: Home
                     relativeUrl:
-        
+
         links:
             name: Links
             items:
