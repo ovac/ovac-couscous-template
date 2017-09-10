@@ -12,7 +12,7 @@
 
 
 ## Introduction
-A template for couscous generated static html documents by ![OVAC4U](`https://www.ovac4u.com`) inspired by the [ElephantlyCouscous](https://github.com/elephantly/ElephantlyCouscous) template design and the [Template-Dark](https://github.com/CouscousPHP/Template-Dark) template configuration with widgets and google analytics.
+A template for couscous generated static html documents by [OVAC4U](https://www.ovac4u.com) inspired by the [ElephantlyCouscous](https://github.com/elephantly/ElephantlyCouscous) template design and the [Template-Dark](https://github.com/CouscousPHP/Template-Dark) template configuration with widgets and google analytics.
 
 [Read The Docs](https://readthedocs.org/) builds websites using a Sphinx template. [That template](https://github.com/snide/sphinx_rtd_template) is open source and released under the MIT license.
 
@@ -87,14 +87,14 @@ menu:
                 installation:
                     text: Installation
                     relativeUrl: installation.html
-        
+
         guide:
             name: Guide
             items:
                 config:
                     text: Config
                     relativeUrl: config.html
-        
+
         api:
             name: Api
             items:
@@ -105,19 +105,17 @@ menu:
                 coverage:
                     text: Coverage
                     relativeUrl: coverage/index.html
-        
+
         links:
             name: Links
             items:
                 external-documentation:
                     text: External Official Documentation
                     absoluteUrl: https://some-website
-                
+
                 external-swagger:
                     text: Api Swagger UI
                     absoluteUrl: https://some-website
 ```
 
 This template configuration is based on the excellent [Template-Dark](https://github.com/CouscousPHP/Template-Dark)
-
-
