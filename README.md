@@ -16,7 +16,7 @@ A template for couscous generated static html documents by [OVAC4U](https://www.
 
 [Read The Docs](https://readthedocs.org/) builds websites using a Sphinx template. [That template](https://github.com/snide/sphinx_rtd_template) is open source and released under the MIT license.
 
-Curious about seeing what it looks like? checkout the [OVAC\Hubtel-Payment](`https://ovac4u.com/packages/hubtel-payment`) composer package official documentation generated using this theme and configuration.
+Curious about seeing what it looks like? checkout the [OVAC\Hubtel-Payment](https://ovac4u.com/packages/hubtel-payment) composer package official documentation generated using this theme and configuration.
 
 ## Screenshot
 [![ScreenShot](https://raw.githubusercontent.com/ovac/ovac-couscous-template/master/img/screenshot.png)](https://www.ovac4u.com/ovac-couscous-template)
